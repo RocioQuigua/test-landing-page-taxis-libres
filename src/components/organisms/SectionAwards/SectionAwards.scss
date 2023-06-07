@@ -4,17 +4,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px;
     h1 {
       font-weight: $font-weight-o;
-      font-size: $font-size-a;
+      font-size: $font-size-c;
+      margin-top: 40px;
       margin-bottom: 20px;
       color: $color-text;
+      text-align: center;
     }
     p {
       font-weight: $font-weight-p;
-      font-size: $font-size-p;
+      font-size: $font-size-v;
       margin-bottom: 10px;
       text-align: center;
+      line-height: 30px;
     }
   }
   &__awards {
@@ -22,5 +26,26 @@
     grid-template-columns: repeat(3, auto);
     justify-content: center;
     padding: 20px;
+  }
+  @media screen and (max-width: 800px) {
+    &__content {
+      padding: 0;
+      h1 {
+        font-size: $font-size-a;
+      }
+      p {
+        font-size: $font-size-p;
+      }
+    }
+    &__awards {
+      grid-template-columns: repeat(1, auto);
+      padding-bottom: 120px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__content {
+      width: 150vh;
+      margin: 0 auto;
+    }
   }
 }

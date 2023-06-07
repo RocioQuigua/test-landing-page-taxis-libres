@@ -1,0 +1,42 @@
+.section-sponsors {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    h1 {
+      font-weight: $font-weight-o;
+      font-size: $font-size-c;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-weight: $font-weight-p;
+      font-size: $font-size-m;
+      line-height: 30px;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    padding: 40px;
+  }
+  @media screen and (max-width: 800px) {
+    &__content {
+      padding: 0;
+      h1 {
+        font-size: $font-size-a;
+      }
+      p {
+        font-size: $font-size-p;
+      }
+    }
+    &__list {
+      grid-template-columns: repeat(2, auto);
+      padding-bottom: 120px;
+      gap: 20px;
+    }
+  }
+}

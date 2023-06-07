@@ -6,14 +6,12 @@
   "../../components/molecules/Header/Header.scss",
   '../../components/molecules/Navbar/Navbar.scss',
   '../../components/molecules/CardObjective/CardObjective.scss',
-  '../../components/molecules/CardAwards/CardAwards.scss';
+  '../../components/molecules/CardAwards/CardAwards.scss',
+  '../../components/molecules/CardSponsors/CardSponsors.scss';
 
 //organisms
 @import "../../components/organisms/Presentation/Presentation.scss",
-  "../../components/organisms/SectionAnswers/SectionAnswers.scss",
   "../../components/organisms/SectionAwards/SectionAwards.scss",
-  "../../components/organisms/SectionJurors/SectionJurors.scss",
   "../../components/organisms/SectionObjective/SectionObjective.scss",
   "../../components/organisms/SectionRegister/SectionRegister.scss",
-  "../../components/organisms/SectionSchedule/SectionSchedule.scss",
   "../../components/organisms/SectionSponsors/SectionSponsors.scss";

@@ -1,0 +1,78 @@
+.section-register {
+  &__content {
+    border: 1px solid red;
+    text-align: center;
+    padding: 40px;
+    h1 {
+      font-weight: $font-weight-g;
+      font-size: $font-size-c;
+      margin-bottom: 10px;
+    }
+    p {
+      font-weight: $font-weight-p;
+      font-size: $font-size-m;
+      line-height: 30px;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border: 1px solid red;
+    label {
+      font-weight: $font-weight-m;
+      font-size: $font-size-p;
+      display: flex;
+      align-items: center;
+      line-height: 20px;
+    }
+    input {
+      font-weight: $font-weight-p;
+      font-size: $font-size-p;
+      width: 300px;
+      height: 30px;
+      border-radius: 4px;
+      border: 1px solid $color-text;
+    }
+    select {
+      font-weight: $font-weight-p;
+      font-size: $font-size-p;
+      width: 300px;
+      height: 30px;
+      border-radius: 4px;
+      border: 1px solid $color-text;
+    }
+  }
+  &__information-personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+  @media screen and (max-width: 800px) {
+    &__content {
+      padding: 0;
+      h1 {
+        font-size: $font-size-a;
+      }
+      p {
+        font-size: $font-size-p;
+      }
+    }
+    &__information-personal {
+      padding-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__content {
+      width: 150vh;
+      margin: 0 auto;
+    }
+  }
+}

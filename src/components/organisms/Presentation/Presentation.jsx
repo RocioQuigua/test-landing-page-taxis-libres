@@ -16,6 +16,7 @@ export const Presentation = () => {
             <div>
               <h1>Hackathon Taxis Libres</h1>
               <h2>Junio 7, 2023 - Junio 9, 2023</h2>
+              <h3>Lugar: Sede Normandia Calle 55 # 72-08</h3>
             </div>
             <p>
               Es una competencia creativa y colaborativa

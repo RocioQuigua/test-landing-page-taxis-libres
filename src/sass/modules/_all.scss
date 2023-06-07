@@ -1,0 +1,18 @@
+//atoms
+@import "../../components/atoms/ButtonCustom/ButtonCustom.scss";
+
+//molecules
+@import "../../components/molecules/Footer/Footer.scss",
+  "../../components/molecules/Header/Header.scss",
+  '../../components/molecules/Navbar/Navbar.scss',
+  '../../components/molecules/CardObjective/CardObjective.scss';
+
+//organisms
+@import "../../components/organisms/Presentation/Presentation.scss",
+  "../../components/organisms/SectionAnswers/SectionAnswers.scss",
+  "../../components/organisms/SectionAwards/SectionAwards.scss",
+  "../../components/organisms/SectionJurors/SectionJurors.scss",
+  "../../components/organisms/SectionObjective/SectionObjective.scss",
+  "../../components/organisms/SectionRegister/SectionRegister.scss",
+  "../../components/organisms/SectionSchedule/SectionSchedule.scss",
+  "../../components/organisms/SectionSponsors/SectionSponsors.scss";

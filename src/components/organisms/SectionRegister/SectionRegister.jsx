@@ -4,7 +4,7 @@ import { ButtonCustom } from '../../atoms/ButtonCustom/ButtonCustom';
 
 export const SectionRegister = () => {
   return (
-    <div className="section-register">
+    <div className="section-register" id='register'>
       <div className="section-register__content">
           <h1>Formulario de inscripción</h1>
           <p>

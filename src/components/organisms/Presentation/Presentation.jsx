@@ -27,7 +27,6 @@ export const Presentation = () => {
             <ButtonCustom type="primary" name="Regístrate" />
           </div>
         </div>
-
       </div>
     </div>
   );

@@ -17,15 +17,14 @@ export const Navbar = () => {
           </a>
         </li>
         <li>
-          <ButtonCustom type='default' name='Cronograma' />
-        </li>
-        <li>
           <a href='#sponsors'>
             <ButtonCustom type='default' name='Patrocinadores' />
           </a>
         </li>
         <li>
-          <ButtonCustom type='default' name='Preguntas frecuentes' />
+          <a href='#register'>
+            <ButtonCustom type='default' name='Formulario' />
+          </a>
         </li>
       </ul>
     </nav>

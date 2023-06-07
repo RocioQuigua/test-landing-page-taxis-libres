@@ -13,14 +13,16 @@
     flex-wrap: wrap;
     h1 {
       width: 100%;
-      font-weight: $font-weight-o;
-      font-size: $font-size-p;
-      
+      font-weight: $font-weight-m;
+      font-size: $font-size-m;
+      padding-bottom: 10px;
     }
     h2 {
       width: 100%;
       font-weight: $font-weight-p;
-      font-size: $font-size-p;
+      font-size: $font-size-v;
+      line-height: $font-size-a;
+      opacity: 0.7;
     }
   }
   &__image {
@@ -35,5 +37,18 @@
   }
   &--left {
     flex-direction: row-reverse;
+  }
+  @media screen and (max-width: 800px) {
+    border-top: 1px solid rgba(255, 255, 255, 0.384);
+    border-radius: 20px 0px 0px 0px;
+    h1 {
+      font-size: $font-size-s;
+    }
+    h2 {
+      font-size: $font-size-p;
+    }
+    &--left {
+      border-radius: 0px 20px 0px 0px;
+    } 
   }
 }

@@ -8,7 +8,7 @@ import logo from '../../../assets/image/logo_taxislibres.png';
 export const Header = () => {
   return (
     <div className='header'>
-      <img src={logo} />
+      <img src={logo} alt='logo' />
       <Navbar />
       <ButtonCustom type='primary' name='Regístrate ahora' />
     </div>

@@ -7,19 +7,21 @@ export const Navbar = () => {
     <nav className='navbar'>
       <ul className='navbar__container'>
         <li>
-          <ButtonCustom type='default' name='Premios'/>
+          <ButtonCustom type='default' name='Premios' />
         </li>
         <li>
-          <ButtonCustom type='default' name='Jurados'/>
+          <a  href='#objectives'>
+            <ButtonCustom type='default' name='Objectivo' />
+          </a>
         </li>
         <li>
-          <ButtonCustom type='default' name='Cronograma'/>
+          <ButtonCustom type='default' name='Cronograma' />
         </li>
         <li>
-          <ButtonCustom type='default' name='Preguntas frecuentes'/>
+          <ButtonCustom type='default' name='Preguntas frecuentes' />
         </li>
         <li>
-          <ButtonCustom type='default' name='Patrocinadores'/>
+          <ButtonCustom type='default' name='Patrocinadores' />
         </li>
       </ul>
     </nav>

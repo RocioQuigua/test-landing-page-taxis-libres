@@ -6,7 +6,8 @@
   }
   &--primary {
     background-color: $color-primary;
-    font-weight: $font-weight-o;
+    font-family: $font-principal;
+    font-weight: $font-weight-m;
     font-size: $font-size-p;
     border-radius: 20px;
     border-style: none;
@@ -17,6 +18,7 @@
   }
   &--default {
     background-color: $color-text;
+    font-family: $font-principal;
     font-weight: $font-weight-p;
     font-size: $font-size-p;
     border-style: none;

@@ -1,0 +1,26 @@
+.section-awards {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-weight: $font-weight-o;
+      font-size: $font-size-a;
+      margin-bottom: 20px;
+      color: $color-text;
+    }
+    p {
+      font-weight: $font-weight-p;
+      font-size: $font-size-p;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+  &__awards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    padding: 20px;
+  }
+}

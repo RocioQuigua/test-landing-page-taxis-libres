@@ -1,0 +1,29 @@
+.section-objective {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  &__text {
+    h1 {
+      font-weight: $font-weight-m;
+      font-size: $font-size-a;
+      margin-bottom: 20px;
+    }
+    p {
+      font-weight: $font-weight-p;
+      font-size: $font-size-p;
+      margin-bottom: 10px;
+    }
+  }
+  &__objectives {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  @media screen and (min-width: 1440px) {
+    &__content {
+      width: 150vh;
+      margin: 0 auto;
+    }
+  }
+}

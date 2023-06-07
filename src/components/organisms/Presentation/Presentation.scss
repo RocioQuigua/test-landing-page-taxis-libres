@@ -1,0 +1,43 @@
+.presentation {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 110px;
+    gap: 40px;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  &__description {
+    gap: 10px;
+    h1 {
+      font-weight: $font-weight-g;
+      font-size: $font-size-a;
+    }
+    h2 {
+      font-weight: $font-weight-m;
+      font-size: $font-size-m;
+      padding-top: 10px;
+    }
+    p {
+      font-weight: $font-weight-p;
+      font-size: $font-size-p;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+    &__logo {
+      justify-content: center;
+    }
+    &__description {
+      text-align: center;
+    }
+  }
+}

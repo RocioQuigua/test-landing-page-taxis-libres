@@ -35,18 +35,20 @@ export const SectionSponsors = () => {
   return (
     <div className="section-sponsors" id="sponsors">
       <div className="section-sponsors__content">
-        <h1>Patrocinadores</h1>
-        <p>
-          Queremos agradecer sinceramente a cada uno de nuestros patrocinadores,
-          seguidores y socios por unirse a nosotros en este evento innovador. Su
-          apoyo y compromiso son esenciales para hacer de esta Hackathon un
-          verdadero éxito.
-        </p>
-      </div>
-      <div className="section-sponsors__list">
-        {sponsors.map((item, index) => (
-          <CardSponsors data={item} key={index}/>
-        ))}
+        <div>
+          <h1>Patrocinadores oficiales</h1>
+          <p>
+            Queremos agradecer sinceramente a cada uno de nuestros patrocinadores,
+            seguidores y socios por unirse a nosotros en este evento innovador. Su
+            apoyo y compromiso son esenciales para hacer de esta Hackathon un
+            verdadero éxito.
+          </p>
+        </div>
+        <div className="section-sponsors__list">
+          {sponsors.map((item, index) => (
+            <CardSponsors data={item} key={index} />
+          ))}
+        </div>
       </div>
     </div>
   );

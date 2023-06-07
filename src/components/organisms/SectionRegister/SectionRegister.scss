@@ -1,12 +1,22 @@
 .section-register {
+  background-color: $color-primary;
+  -webkit-border-top-rigth-radius: 300px;
+  -webkit-border-bottom-left-radius: 300px;
+  -moz-border-radius-topright: 300px;
+  -moz-border-radius-bottomleft: 300px;
+  border-top-right-radius: 300px;
+  border-bottom-left-radius: 300px;
   &__content {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 40px;
     h1 {
       font-weight: $font-weight-g;
       font-size: $font-size-c;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     p {
       font-weight: $font-weight-p;
@@ -15,47 +25,62 @@
     }
   }
   &__form {
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    border: 1px solid red;
     label {
       font-weight: $font-weight-m;
       font-size: $font-size-p;
-      display: flex;
-      align-items: center;
       line-height: 20px;
+      span {
+        color: rgb(226, 112, 112);
+      }
     }
     input {
+      width: 100%;
+      font-family: $font-principal;
       font-weight: $font-weight-p;
       font-size: $font-size-p;
-      width: 300px;
-      height: 30px;
-      border-radius: 4px;
+      height: 60px;
+      border-radius: 10px;
       border: 1px solid $color-text;
+      padding: 20px;
     }
     select {
+      font-family: $font-principal;
       font-weight: $font-weight-p;
+      line-height: 60px;
       font-size: $font-size-p;
-      width: 300px;
-      height: 30px;
-      border-radius: 4px;
+      width: 100%;
+      height: 60px;
+      border-radius: 10px;
       border: 1px solid $color-text;
+      padding: 0px 20px;
     }
   }
   &__information-personal {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    align-items: center;
+    text-align: start;
+    align-items: flex-start;
     padding: 10px;
     margin-bottom: 10px;
     gap: 10px;
   }
   @media screen and (max-width: 800px) {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    -webkit-border-top-rigth-radius: 100px;
+    -webkit-border-bottom-left-radius: 100px;
+    -moz-border-radius-topright: 100px;
+    -moz-border-radius-bottomleft: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
     &__content {
       padding: 0;
       h1 {
@@ -67,6 +92,12 @@
     }
     &__information-personal {
       padding-bottom: 10px;
+    }
+    &__form {
+      width: 95%;
+      label, input, select {
+        font-size: $font-size-s;
+      }
     }
   }
   @media screen and (min-width: 1440px) {

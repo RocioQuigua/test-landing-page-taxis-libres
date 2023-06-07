@@ -15,8 +15,8 @@ export const App = () => {
       <Presentation />
       <SectionObjective />
       <SectionAwards />
-      <SectionSponsors />
       <SectionRegister />
+      <SectionSponsors />
       <Footer />
     </div>
   )

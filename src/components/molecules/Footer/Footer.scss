@@ -20,8 +20,7 @@
     h1 {
       font-size: $font-size-p;
       color: $color-white;
-      padding: 10px;
-      text-align: center;
+      padding: 20px;
     }
   }
   &__social-media {
@@ -35,6 +34,35 @@
     img {
       width: 60%;
       object-fit: contain;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    height: auto;
+    &__content {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 20%;
+      }
+  }
+  &__items {
+    h1 {
+    font-size: $font-size-s;
+  }
+  }
+    &__social-media {
+      justify-content: center;
+      flex-direction: column;
+      img {
+        width: 80%;
+      }
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__content {
+      width: 150vh;
+      margin: 0 auto;
     }
   }
 }

@@ -23,5 +23,19 @@
     font-size: $font-size-p;
     border-style: none;
     color: $color-white;
+  }
+
+  &--dark {
+    background-color: $color-text;
+    font-family: $font-principal;
+    font-weight: $font-weight-p;
+    font-size: $font-size-p;
+    border-style: none;
+    color: $color-white;
+    background-color: $color-text;
+    min-width: 100%;
+    max-width: 100%;
+    height: 56px;
+    border-radius: 20px;
   } 
 }

@@ -1,0 +1,25 @@
+.button-custom {
+  font-size: $font-size-p;
+  cursor: pointer;
+  :hover {
+    opacity: 90%;
+  }
+  &--primary {
+    background-color: $color-primary;
+    font-weight: $font-weight-o;
+    font-size: $font-size-p;
+    border-radius: 20px;
+    border-style: none;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 0px 20px;
+    height: 56px;
+  }
+  &--default {
+    background-color: $color-text;
+    font-weight: $font-weight-p;
+    font-size: $font-size-p;
+    border-style: none;
+    color: $color-white;
+  } 
+}

@@ -1,0 +1,15 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 20px;
+  background-color: $color-text;
+  img {
+    height: 40px;
+    padding: 8px 0;
+    object-fit: contain;
+  }
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

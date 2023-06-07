@@ -1,0 +1,19 @@
+.navbar {
+  gap: 10px;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style-type: none;
+  }
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  }
+}
